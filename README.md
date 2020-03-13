@@ -6,4 +6,4 @@
                  ● Firebase login mechanism to log the user in.
             Step-2
                  ● ability to login using facebook or google
-      But login with facebook getting error.
+      But login with facebook getting error.so,i put that in commnet.
