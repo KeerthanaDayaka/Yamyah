@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationPage">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/remail_layout"
+        android:layout_width="390dp"
+        android:layout_height="109dp"
+        app:errorTextAppearance="@style/ErrorText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        app:hintEnabled="false"
+        android:layout_marginTop="105dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/remail"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/email"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rpass_layout"
+        android:layout_width="401dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        app:errorTextAppearance="@style/ErrorText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        app:hintEnabled="false"
+        android:layout_marginLeft="12dp"
+        app:passwordToggleEnabled="true"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginRight="-3dp"
+        android:layout_marginBottom="278dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rpassword"
+            android:layout_width="387dp"
+            android:layout_height="76dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/key"
+            android:drawableStart="@drawable/key"
+            android:inputType="textPassword"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rrpass_layout"
+        android:layout_width="395dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:errorTextAppearance="@style/ErrorText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="165dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rpassword1"
+            android:layout_width="383dp"
+            android:layout_height="75dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/key"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/key"
+            android:hint="Re Enter Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="186dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/round_button"
+        android:onClick="RegisterUser"
+        android:text="Register"
+        android:textSize="20dp" />
+
+    <TextView
+
+        android:layout_width="92dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="41dp"
+        android:textSize="25dp"
+        android:onClick="Launch"
+        android:textColor="#0B29D1"
+        android:textStyle="bold"
+        android:text="@string/login" />
+
+
+</RelativeLayout>
